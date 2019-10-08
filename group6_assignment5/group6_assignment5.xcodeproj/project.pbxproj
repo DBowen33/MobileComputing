@@ -13,6 +13,8 @@
 		06CE2918234D471600B59C4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CE2916234D471600B59C4E /* Main.storyboard */; };
 		06CE291A234D471600B59C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CE2919234D471600B59C4E /* Assets.xcassets */; };
 		06CE291D234D471600B59C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CE291B234D471600B59C4E /* LaunchScreen.storyboard */; };
+		06CE2925234D4C2600B59C4E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE2924234D4C2600B59C4E /* Animal.swift */; };
+		06CE2929234D563200B59C4E /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		06CE2919234D471600B59C4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CE291C234D471600B59C4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06CE291E234D471600B59C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CE2924234D4C2600B59C4E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 				06CE2912234D471600B59C4E /* SceneDelegate.swift */,
 				06CE2914234D471600B59C4E /* ViewController.swift */,
 				06CE2916234D471600B59C4E /* Main.storyboard */,
+				06CE2924234D4C2600B59C4E /* Animal.swift */,
 				06CE2919234D471600B59C4E /* Assets.xcassets */,
 				06CE291B234D471600B59C4E /* LaunchScreen.storyboard */,
 				06CE291E234D471600B59C4E /* Info.plist */,
+				06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */,
 			);
 			path = group6_assignment5;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CE2915234D471600B59C4E /* ViewController.swift in Sources */,
+				06CE2929234D563200B59C4E /* AnimalsTableViewController.swift in Sources */,
+				06CE2925234D4C2600B59C4E /* Animal.swift in Sources */,
 				06CE2911234D471600B59C4E /* AppDelegate.swift in Sources */,
 				06CE2913234D471600B59C4E /* SceneDelegate.swift in Sources */,
 			);
