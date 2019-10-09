@@ -8,6 +8,9 @@
 
 import Foundation
 
+
+
+
 class Animal {
     
     // MARK: Properties
