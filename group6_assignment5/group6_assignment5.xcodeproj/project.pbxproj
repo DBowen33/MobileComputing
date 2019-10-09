@@ -15,6 +15,7 @@
 		06CE291D234D471600B59C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CE291B234D471600B59C4E /* LaunchScreen.storyboard */; };
 		06CE2925234D4C2600B59C4E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE2924234D4C2600B59C4E /* Animal.swift */; };
 		06CE2929234D563200B59C4E /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */; };
+		8A36B718234E9DC7008496EE /* AnimalList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A36B717234E9DC7008496EE /* AnimalList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		06CE291E234D471600B59C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06CE2924234D4C2600B59C4E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
+		8A36B717234E9DC7008496EE /* AnimalList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AnimalList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				06CE2919234D471600B59C4E /* Assets.xcassets */,
 				06CE291B234D471600B59C4E /* LaunchScreen.storyboard */,
 				06CE291E234D471600B59C4E /* Info.plist */,
+				8A36B717234E9DC7008496EE /* AnimalList.plist */,
 				06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */,
 			);
 			path = group6_assignment5;
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A36B718234E9DC7008496EE /* AnimalList.plist in Resources */,
 				06CE291D234D471600B59C4E /* LaunchScreen.storyboard in Resources */,
 				06CE291A234D471600B59C4E /* Assets.xcassets in Resources */,
 				06CE2918234D471600B59C4E /* Main.storyboard in Resources */,

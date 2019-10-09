@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Scientific Name</key>
+		<string>Carcharodon carcharias</string>
+		<key>Class</key>
+		<string>Chondrichthyes</string>
+		<key>Weight</key>
+		<string>680.0 kg</string>
+	</dict>
+	<dict>
+		<key>Scientific Name</key>
+		<string>Sepia officinalis</string>
+		<key>Class</key>
+		<string>Cephalopoda</string>
+		<key>Weight</key>
+		<string>4.0 kg</string>
+	</dict>
+	<dict>
+		<key>Scientific Name</key>
+		<string>Equus ferus</string>
+		<key>Class</key>
+		<string>Mammalia</string>
+		<key>Weight</key>
+		<string>300.0 kg</string>
+	</dict>
+	<dict>
+		<key>Scientific Name</key>
+		<string>Elephas maximus</string>
+		<key>Class</key>
+		<string>Mammalis</string>
+		<key>Weight</key>
+		<string>5,000.0 kg</string>
+	</dict>
+</array>
+</plist>
