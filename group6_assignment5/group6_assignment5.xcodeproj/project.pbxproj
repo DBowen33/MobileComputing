@@ -66,12 +66,12 @@
 				06CE2912234D471600B59C4E /* SceneDelegate.swift */,
 				06CE2914234D471600B59C4E /* ViewController.swift */,
 				06CE2916234D471600B59C4E /* Main.storyboard */,
+				06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */,
 				06CE2924234D4C2600B59C4E /* Animal.swift */,
 				06CE2919234D471600B59C4E /* Assets.xcassets */,
 				06CE291B234D471600B59C4E /* LaunchScreen.storyboard */,
-				06CE291E234D471600B59C4E /* Info.plist */,
 				8A36B717234E9DC7008496EE /* AnimalList.plist */,
-				06CE2928234D563200B59C4E /* AnimalsTableViewController.swift */,
+				06CE291E234D471600B59C4E /* Info.plist */,
 			);
 			path = group6_assignment5;
 			sourceTree = "<group>";

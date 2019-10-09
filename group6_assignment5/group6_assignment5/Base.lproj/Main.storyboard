@@ -43,7 +43,40 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="353" height="259"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-F3-DfC">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="259"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tns-7c-4i3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="52"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tH-O2-J8k">
+                                                    <rect key="frame" x="0.0" y="50" width="353" height="209"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="0tH-O2-J8k" firstAttribute="leading" secondItem="iKy-F3-DfC" secondAttribute="leading" id="9Gr-qr-3vY"/>
+                                                <constraint firstItem="0tH-O2-J8k" firstAttribute="top" secondItem="Tns-7c-4i3" secondAttribute="bottom" constant="-2" id="BuM-bx-IYo"/>
+                                                <constraint firstAttribute="bottom" secondItem="0tH-O2-J8k" secondAttribute="bottom" id="DHj-FR-qSs"/>
+                                                <constraint firstItem="0tH-O2-J8k" firstAttribute="top" secondItem="Tns-7c-4i3" secondAttribute="bottom" constant="-2" id="KW9-Qe-X4P"/>
+                                                <constraint firstItem="Tns-7c-4i3" firstAttribute="leading" secondItem="iKy-F3-DfC" secondAttribute="leading" id="Tk1-ts-Vrb"/>
+                                                <constraint firstAttribute="trailing" secondItem="0tH-O2-J8k" secondAttribute="trailing" id="aN9-Kv-Qvs"/>
+                                                <constraint firstAttribute="trailing" secondItem="Tns-7c-4i3" secondAttribute="trailing" id="sks-Mj-pKu"/>
+                                                <constraint firstItem="Tns-7c-4i3" firstAttribute="top" secondItem="iKy-F3-DfC" secondAttribute="top" id="w59-g7-6o8"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iKy-F3-DfC" secondAttribute="bottom" id="3Kv-eQ-LKx"/>
+                                    <constraint firstItem="iKy-F3-DfC" firstAttribute="leading" secondItem="3uG-FZ-bQy" secondAttribute="leading" id="GOn-4h-k6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="iKy-F3-DfC" secondAttribute="trailing" id="TBf-gL-Aix"/>
+                                    <constraint firstItem="iKy-F3-DfC" firstAttribute="top" secondItem="3uG-FZ-bQy" secondAttribute="top" id="mh2-ke-s48"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
