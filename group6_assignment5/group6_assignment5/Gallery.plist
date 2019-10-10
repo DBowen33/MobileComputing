@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>shark1</key>
+		<string>&quot;Up close and personal&quot;</string>
+	</dict>
+	<dict>
+		<key>shark2</key>
+		<string>&quot;Shark with a diver&quot;</string>
+	</dict>
+	<dict>
+		<key>shark3</key>
+		<string>&quot;In the open sea&quot;</string>
+	</dict>
+	<dict>
+		<key>takhi1</key>
+		<string>&quot;A mother and calf&quot;</string>
+	</dict>
+	<dict>
+		<key>takhi2</key>
+		<string>&quot;Eating with a friend&quot;</string>
+	</dict>
+	<dict>
+		<key>takhi3</key>
+		<string>&quot;Running free&quot;</string>
+	</dict>
+	<dict>
+		<key>fish1</key>
+		<string>&quot;Up close&quot;</string>
+	</dict>
+	<dict>
+		<key>fish2</key>
+		<string>&quot;In the open sea&quot;</string>
+	</dict>
+	<dict>
+		<key>fish3</key>
+		<string>&quot;With a diver&quot;</string>
+	</dict>
+	<dict>
+		<key>elephant1</key>
+		<string>&quot;In the savannah&quot;</string>
+	</dict>
+	<dict>
+		<key>elephant2</key>
+		<string>&quot;A pair&quot;</string>
+	</dict>
+	<dict>
+		<key>elephant3</key>
+		<string>&quot;Ready to charge&quot;</string>
+	</dict>
+</array>
+</plist>
