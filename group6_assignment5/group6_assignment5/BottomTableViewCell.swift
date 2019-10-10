@@ -10,7 +10,9 @@ import UIKit
 
 class BottomTableViewCell: UITableViewCell {
     
-    
+    @IBOutlet weak var scientificNameLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
     
 
     override func awakeFromNib() {

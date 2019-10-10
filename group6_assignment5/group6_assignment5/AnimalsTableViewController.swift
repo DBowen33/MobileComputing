@@ -63,26 +63,33 @@ class AnimalsTableViewController: UITableViewController {
         return 2
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if tableView == 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Table view cells are reused and should be dequeued using a cell identifier.
-        let cellIdentifier = "AnimalName"
+        let animal_list = animals[indexPath.row]
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AnimalName  else {
-            fatalError("The dequeued cell is not an instance of AnimalTableViewCell.")
+        print(animal_list)
+        print(indexPath.row)
+        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TopCell") as! TopTableViewCell
+            
+            cell.animalImageView.image = animal_list.photo
+            cell.nameLabel.text = animal_list.name
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BottomCell") as! BottomTableViewCell
+            
+            cell.scientificNameLabel.text = animal_list.scientificName
+            cell.classLabel.text = animal_list.animalClass
+            cell.sizeLabel.text = animal_list.size
+            
+            return cell
         }
-        
-        // Fetches the appropriate meal for the data source layout.
-        let meal = animals[indexPath.row]
 
-        return cell
+
     }
-    */
-
+    
     
 
     /*
