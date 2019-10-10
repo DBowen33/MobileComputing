@@ -71,14 +71,14 @@ class AnimalsTableViewController: UITableViewController {
         print(indexPath.row)
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TopCell") as! TopTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Top Cell") as! TopTableViewCell
             
             cell.animalImageView.image = animal_list.photo
             cell.nameLabel.text = animal_list.name
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "BottomCell") as! BottomTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Bottom Cell") as! BottomTableViewCell
             
             cell.scientificNameLabel.text = animal_list.scientificName
             cell.classLabel.text = animal_list.animalClass
