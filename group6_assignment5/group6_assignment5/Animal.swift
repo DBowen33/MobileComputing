@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 
@@ -18,11 +19,12 @@ class Animal {
     var name: String
     var scientificName: String
     var animalClass: String
-    var size: Float
+    var size: String
+    var photo: UIImage?
     
     // MARK: Initialization
     
-    init?(name: String, scientificName: String, animalClass: String, size: Float) {
+    init?(name: String, scientificName: String, animalClass: String, size: String, photo: UIImage) {
         
         // The name must not be empty
         guard !name.isEmpty else {
@@ -39,10 +41,12 @@ class Animal {
             return nil
         }
         
-        // Size must greater than 0
-        guard size > 0 else {
+        // The animal size must not be empty
+        guard !size.isEmpty else {
             return nil
         }
+
+    
       
         
         // Initialize stored properties
@@ -50,6 +54,7 @@ class Animal {
         self.scientificName = scientificName
         self.animalClass = animalClass
         self.size = size
+        self.photo = photo
     
     }
 }

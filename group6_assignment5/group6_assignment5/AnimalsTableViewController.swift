@@ -9,38 +9,81 @@
 import UIKit
 
 class AnimalsTableViewController: UITableViewController {
+    
+    var animals = [Animal]()
+    
+    private func loadAnimals() {
+        
+
+        
+        let photo1 = UIImage(named: "animal1")
+        let photo2 = UIImage(named: "animal2")
+        let photo3 = UIImage(named: "animal3")
+        let photo4 = UIImage(named: "animal4")
+
+        guard let animal1 = Animal(name: "Great White Shark", scientificName: "Carcharodon carcharias", animalClass: "Chondrichthyes", size: "680.0 kg", photo: photo1!) else {
+            fatalError("Unable to instantiate meal1")
+        }
+        
+        guard let animal2 = Animal(name: "Common Cuttlefish", scientificName: "Sepia officinalis", animalClass: "Cephalopoda" , size: "4.0 kg", photo: photo2!) else {
+            fatalError("Unable to instantiate meal1")
+        }
+        
+        guard let animal3 = Animal(name: "Takhi", scientificName: "Equus ferus", animalClass: "Mammalia", size: "300.0 kg", photo: photo3!) else {
+            fatalError("Unable to instantiate meal1")
+        }
+        
+        guard let animal4 = Animal(name: "Asian Elephant", scientificName: "Elephas maximus", animalClass: "Mammalis", size: "5,000.0 kg", photo: photo4!) else {
+            fatalError("Unable to instantiate meal1")
+        }
+        
+        
+        animals += [animal1, animal2, animal3, animal4]
+
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadAnimals()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return animals.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if tableView == 
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "AnimalName"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AnimalName  else {
+            fatalError("The dequeued cell is not an instance of AnimalTableViewCell.")
+        }
+        
+        // Fetches the appropriate meal for the data source layout.
+        let meal = animals[indexPath.row]
 
         return cell
     }
     */
+
+    
 
     /*
     // Override to support conditional editing of the table view.
