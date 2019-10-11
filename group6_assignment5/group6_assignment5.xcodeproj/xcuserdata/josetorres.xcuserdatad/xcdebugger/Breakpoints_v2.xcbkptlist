@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0F0D5FF9-1D69-4D87-A40D-75FBA975F2AE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "group6_assignment5/AnimalsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AnimalsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - 7e7bb23bc4c11097"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.animals.getter : Swift.Array&lt;group6_assignment5.Animal&gt;"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - 5170254355e88d1b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.animals.setter : Swift.Array&lt;group6_assignment5.Animal&gt;"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - e5e8642c2229e3f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.animals.modify : Swift.Array&lt;group6_assignment5.Animal&gt;"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - 3ec5d6a2be8fca12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.animals.modify : Swift.Array&lt;group6_assignment5.Animal&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - 8d98ff0c3fe697c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.init(style: __C.UITableViewStyle) -&gt; group6_assignment5.AnimalsTableViewController"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "45">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - da8420ef560eba1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; group6_assignment5.AnimalsTableViewController"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "163">
+               </Location>
+               <Location
+                  uuid = "D943886B-E146-4C84-9A40-7BA2F2EF2713 - 61dda6ea3127b356"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group6_assignment5.AnimalsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;group6_assignment5.AnimalsTableViewController&gt;"
+                  moduleName = "group6_assignment5"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josetorres/Desktop/MobileComputing/group6_assignment5/group6_assignment5/AnimalsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

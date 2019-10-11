@@ -11,8 +11,8 @@ import UIKit
 private let reuseIdentifier = "GalleryCell"
 
 class GalleryCollectionViewController: UICollectionViewController {
-    
-    var galleryItems = [String]()
+    var current_animal:String = "shark"
+    var galleryItems = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +35,9 @@ class GalleryCollectionViewController: UICollectionViewController {
         let inputDataArray = NSArray(contentsOfFile: inputFile!)
         for input in inputDataArray as! [Dictionary<String, String>] {
             for (key, value) in input {
-                galleryItems.append("\(key): \(value)")
+                galleryItems.updateValue(value, forKey: key)
             }
+        //print(galleryItems)
         }
         
         
@@ -56,17 +57,19 @@ class GalleryCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return galleryItems.count
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return 3
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let item_idx = indexPath.row + 1
+        let animal_inst = current_animal + " " + String(item_idx)
+        let label = galleryItems[animal_inst]
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "Gallery Cell"
         
@@ -75,7 +78,8 @@ class GalleryCollectionViewController: UICollectionViewController {
         
         // Fetches the appropriate meal for the data source layout.
         
-        let photo1 = UIImage(named: "shark 1")
+        let photo1 = UIImage(named: animal_inst)
+        cell.galleryLabel.text = label
         cell.galleryImageView.image = photo1
         
 

@@ -133,12 +133,30 @@ class AnimalsTableViewController: UITableViewController {
 
     /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
     */
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        
+        let newidx = self.tableView.indexPathForSelectedRow![1]
+        if segue.destination is GalleryCollectionViewController
+        {
+            print("\(newidx) idx in segue")
+            let vc = segue.destination as? GalleryCollectionViewController
+            if(animals[newidx].name == "Great White Shark"){
+                vc?.current_animal = "shark"
+            } else if(animals[newidx].name == "Common Cuttlefish"){
+                vc?.current_animal = "fish"
+            } else if(animals[newidx].name == "Takhi"){
+                vc?.current_animal = "takhi"
+            } else if(animals[newidx].name == "Asian Elephant"){
+                vc?.current_animal = "elephant"
+            }
+            
+        }
+    }
+    
+    
 
 }
