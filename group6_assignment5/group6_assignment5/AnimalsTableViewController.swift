@@ -38,7 +38,7 @@ class AnimalsTableViewController: UITableViewController {
         }
         
         
-        animals += [animal1, animal2, animal3, animal4]
+        animals += [animal1, animal1, animal2, animal2, animal3, animal3, animal4, animal4]
 
         
     }
@@ -55,39 +55,43 @@ class AnimalsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return animals.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return animals.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let animal_list = animals[indexPath.row]
         
-        print(animal_list)
-        print(indexPath.row)
-        
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Top Cell") as! TopTableViewCell
-            
-            cell.animalImageView.image = animal_list.photo
-            cell.nameLabel.text = animal_list.name
-            
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Bottom Cell") as! BottomTableViewCell
-            
-            cell.scientificNameLabel.text = animal_list.scientificName
-            cell.classLabel.text = animal_list.animalClass
-            cell.sizeLabel.text = animal_list.size
-            
-            return cell
+        if indexPath.row % 2 == 0{
+            return TopCell(animal: animal_list)
+        }else{
+            return BottomCell(animal: animal_list)
         }
+        
+        
+        
 
-
+    }
+    func TopCell(animal:Animal) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Top Cell") as! TopTableViewCell
+        
+        cell.animalImageView.image = animal.photo
+        cell.nameLabel.text = animal.name
+        
+        return cell
+    }
+    func BottomCell(animal:Animal) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Bottom Cell") as! BottomTableViewCell
+        
+        cell.scientificNameLabel.text = animal.scientificName
+        cell.classLabel.text = animal.animalClass
+        cell.sizeLabel.text = animal.size
+        return cell
     }
     
     
