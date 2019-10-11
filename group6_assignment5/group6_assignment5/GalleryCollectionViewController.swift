@@ -12,13 +12,13 @@ private let reuseIdentifier = "GalleryCell"
 
 class GalleryCollectionViewController: UICollectionViewController {
     
-    private func loadGallery() {
-        
-        
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var nsDictionary: NSDictionary?
+        if let path = Bundle.main.path(forResource: "Gallery", ofType: "plist") {
+           nsDictionary = NSDictionary(contentsOfFile: path)
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,22 +43,25 @@ class GalleryCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return 0
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GalleryCollectionViewCell
         
         cell.galleryLabel.text = "caption"
         //cell.galleryImageView.image = "photo"
     
         // Configure the cell
+
     
         return cell
     }
