@@ -12,13 +12,14 @@ private let reuseIdentifier = "GalleryCell"
 
 class GalleryCollectionViewController: UICollectionViewController {
     
+    var galleryItems = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var nsDictionary: NSDictionary?
-        if let path = Bundle.main.path(forResource: "Gallery", ofType: "plist") {
-           nsDictionary = NSDictionary(contentsOfFile: path)
-        }
+        accessPlist()
+    
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,6 +28,18 @@ class GalleryCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+    }
+    
+    private func accessPlist() {
+        let inputFile = Bundle.main.path(forResource: "Gallery", ofType: "plist")
+        let inputDataArray = NSArray(contentsOfFile: inputFile!)
+        for input in inputDataArray as! [Dictionary<String, String>] {
+            for (key, value) in input {
+                galleryItems.append("\(key): \(value)")
+            }
+        }
+        
+        
     }
 
     /*
@@ -43,27 +56,45 @@ class GalleryCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return galleryItems.count
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GalleryCollectionViewCell
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "Gallery Cell"
         
-        cell.galleryLabel.text = "caption"
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GalleryCollectionViewCell
+        
+        // Fetches the appropriate meal for the data source layout.
+        
+        let photo1 = UIImage(named: "shark 1")
+        cell.galleryImageView.image = photo1
+        
+
+        
+
+        
+
+        return cell
+        
+        
+
+        //let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GalleryCollectionViewCell
+        
+        //cell.galleryLabel.text = "caption"
         //cell.galleryImageView.image = "photo"
     
         // Configure the cell
 
     
-        return cell
     }
 
     // MARK: UICollectionViewDelegate

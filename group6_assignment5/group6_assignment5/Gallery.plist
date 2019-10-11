@@ -3,51 +3,51 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>shark1</key>
+		<key>shark 1</key>
 		<string>&quot;Up close and personal&quot;</string>
 	</dict>
 	<dict>
-		<key>shark2</key>
+		<key>shark 2</key>
 		<string>&quot;Shark with a diver&quot;</string>
 	</dict>
 	<dict>
-		<key>shark3</key>
+		<key>shark 3</key>
 		<string>&quot;In the open sea&quot;</string>
 	</dict>
 	<dict>
-		<key>takhi1</key>
+		<key>takhi 1</key>
 		<string>&quot;A mother and calf&quot;</string>
 	</dict>
 	<dict>
-		<key>takhi2</key>
+		<key>takhi 2</key>
 		<string>&quot;Eating with a friend&quot;</string>
 	</dict>
 	<dict>
-		<key>takhi3</key>
+		<key>takhi 3</key>
 		<string>&quot;Running free&quot;</string>
 	</dict>
 	<dict>
-		<key>fish1</key>
+		<key>fish 1</key>
 		<string>&quot;Up close&quot;</string>
 	</dict>
 	<dict>
-		<key>fish2</key>
+		<key>fish 2</key>
 		<string>&quot;In the open sea&quot;</string>
 	</dict>
 	<dict>
-		<key>fish3</key>
+		<key>fish 3</key>
 		<string>&quot;With a diver&quot;</string>
 	</dict>
 	<dict>
-		<key>elephant1</key>
+		<key>elephant 1</key>
 		<string>&quot;In the savannah&quot;</string>
 	</dict>
 	<dict>
-		<key>elephant2</key>
+		<key>elephant 2</key>
 		<string>&quot;A pair&quot;</string>
 	</dict>
 	<dict>
-		<key>elephant3</key>
+		<key>elephant 3</key>
 		<string>&quot;Ready to charge&quot;</string>
 	</dict>
 </array>
